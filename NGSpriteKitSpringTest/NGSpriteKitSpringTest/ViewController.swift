@@ -8,6 +8,7 @@
 
 import UIKit
 import SpriteKit
+import SpriteKit_Spring
 
 final class TestScene: SKScene {
   let childOne: SKNode!
@@ -36,6 +37,7 @@ final class TestScene: SKScene {
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     super.touchesBegan(touches, with: event)
     childOne.run(SKAction.scale(by: 1.2, duration: 1))
+    childTwo.run(SKAction.scale(by: 1.2, duration: 2, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 2))
   }
 }
 

@@ -11,6 +11,7 @@
 		4F3936671ED6884E0002A5B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3936661ED6884E0002A5B9 /* ViewController.swift */; };
 		4F39366C1ED6884E0002A5B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F39366B1ED6884E0002A5B9 /* Assets.xcassets */; };
 		4F39366F1ED6884E0002A5B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F39366D1ED6884E0002A5B9 /* LaunchScreen.storyboard */; };
+		64B950CEEBD5FEE4CDF5A0EF /* Pods_NGSpriteKitSpringTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC84C6719921FA9B78F0010A /* Pods_NGSpriteKitSpringTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,9 @@
 		4F39366B1ED6884E0002A5B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F39366E1ED6884E0002A5B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F3936701ED6884E0002A5B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B38207AAEFD230B66B6536A /* Pods-NGSpriteKitSpringTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGSpriteKitSpringTest.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-NGSpriteKitSpringTest/Pods-NGSpriteKitSpringTest.debug.xcconfig"; sourceTree = "<group>"; };
+		92C4B43E97227DFD0691409B /* Pods-NGSpriteKitSpringTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGSpriteKitSpringTest.release.xcconfig"; path = "../Pods/Target Support Files/Pods-NGSpriteKitSpringTest/Pods-NGSpriteKitSpringTest.release.xcconfig"; sourceTree = "<group>"; };
+		EC84C6719921FA9B78F0010A /* Pods_NGSpriteKitSpringTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NGSpriteKitSpringTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +31,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64B950CEEBD5FEE4CDF5A0EF /* Pods_NGSpriteKitSpringTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20942E6393976E0836C43D7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B38207AAEFD230B66B6536A /* Pods-NGSpriteKitSpringTest.debug.xcconfig */,
+				92C4B43E97227DFD0691409B /* Pods-NGSpriteKitSpringTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4F3936581ED6884E0002A5B9 = {
 			isa = PBXGroup;
 			children = (
 				4F3936631ED6884E0002A5B9 /* NGSpriteKitSpringTest */,
 				4F3936621ED6884E0002A5B9 /* Products */,
+				20942E6393976E0836C43D7A /* Pods */,
+				B09BB830581A8613CB709870 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +77,14 @@
 			path = NGSpriteKitSpringTest;
 			sourceTree = "<group>";
 		};
+		B09BB830581A8613CB709870 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC84C6719921FA9B78F0010A /* Pods_NGSpriteKitSpringTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,9 +92,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F3936731ED6884E0002A5B9 /* Build configuration list for PBXNativeTarget "NGSpriteKitSpringTest" */;
 			buildPhases = (
+				F70D5548B4EA514341D82D12 /* [CP] Check Pods Manifest.lock */,
 				4F39365D1ED6884E0002A5B9 /* Sources */,
 				4F39365E1ED6884E0002A5B9 /* Frameworks */,
 				4F39365F1ED6884E0002A5B9 /* Resources */,
+				B95CD1D43E28CC0530E030EF /* [CP] Embed Pods Frameworks */,
+				7CA544B3C9EA32851BACA696 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,6 +154,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CA544B3C9EA32851BACA696 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-NGSpriteKitSpringTest/Pods-NGSpriteKitSpringTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B95CD1D43E28CC0530E030EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-NGSpriteKitSpringTest/Pods-NGSpriteKitSpringTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F70D5548B4EA514341D82D12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4F39365D1ED6884E0002A5B9 /* Sources */ = {
@@ -247,6 +322,7 @@
 		};
 		4F3936741ED6884E0002A5B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B38207AAEFD230B66B6536A /* Pods-NGSpriteKitSpringTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 29P3YRFLV5;
@@ -260,6 +336,7 @@
 		};
 		4F3936751ED6884E0002A5B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92C4B43E97227DFD0691409B /* Pods-NGSpriteKitSpringTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 29P3YRFLV5;
