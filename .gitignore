@@ -1,0 +1,13 @@
+NGSpriteKitSpringTest/NGSpriteKitSpringTest.xcodeproj/project.xcworkspace
+NGSpriteKitSpringTest/NGSpriteKitSpringTest.xcodeproj/xcuserdata
+NGSpriteKitSpringTest/NGSpriteKitSpringTest.xcworkspace/xcuserdata
+xcuserdata
+*.xccheckout
+*.xcscmblueprint
+*.pbxuser
+.DS_Store
+
+# Generated files for CocoaPods
+.bundle
+vendor
+Pods
