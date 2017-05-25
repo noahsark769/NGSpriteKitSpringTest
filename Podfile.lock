@@ -2,21 +2,21 @@ PODS:
   - SpriteKit-Spring (1.0.1)
 
 DEPENDENCIES:
-  - SpriteKit-Spring (from `https://github.com/noahsark769/SpriteKit-Spring.git`, branch `master`)
+  - SpriteKit-Spring (from `https://github.com/noahsark769/SpriteKit-Spring.git`, branch `fix`)
 
 EXTERNAL SOURCES:
   SpriteKit-Spring:
-    :branch: master
+    :branch: fix
     :git: https://github.com/noahsark769/SpriteKit-Spring.git
 
 CHECKOUT OPTIONS:
   SpriteKit-Spring:
-    :commit: bafa188b8aaec5838651a5f8e2abd7218e0e1d7a
+    :commit: 4a93e108e7298b1a9d1e1d80d7b69c6834e6016b
     :git: https://github.com/noahsark769/SpriteKit-Spring.git
 
 SPEC CHECKSUMS:
   SpriteKit-Spring: 3586bde2cf5d41f5a6af023c4b5bb240eaa3d7b0
 
-PODFILE CHECKSUM: 16eb02cb8303b7be69a8d9bd70cd8cd42527c9a4
+PODFILE CHECKSUM: c2713f5f8f74534bf5136a87ac55fd35db106ab0
 
 COCOAPODS: 1.2.1
